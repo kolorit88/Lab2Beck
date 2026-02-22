@@ -28,7 +28,7 @@ class HelloController {
         if (user == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found")
         }
-        return ResponseEntity.status(HttpStatus.OK).body(UserData(user.name, user.surname, user.mail))
+        return ResponseEntity.status(HttpStatus.OK).body(UserData(user.name, user.surname))
     }
 
     @GetMapping("/{id}")

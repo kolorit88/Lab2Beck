@@ -10,8 +10,7 @@ fun createNewUser(userData: UserData) : User
     val user = User(
         id = userId,
         name = userData.name,
-        surname = userData.surname,
-        mail = userData.mail,
+        surname = userData.surname
     )
 
     return user
